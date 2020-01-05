@@ -1,0 +1,21 @@
+<div id="app" class="all" >
+  
+
+<!-- User Dashboard -->
+  <div class="admin" v-show="login==true">
+    <RightMenu :pages="pages"></RightMenu>
+    <div class="content-dashboard">    
+      <router-view />
+    </div>  
+  </div>
+
+
+<!-- User Dashboard -->
+  <div class="no-admin" v-show="login==false">
+    <LoginBox></LoginBox>
+  </div>
+
+
+</div>
+
+
