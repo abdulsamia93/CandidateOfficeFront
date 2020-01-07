@@ -1,7 +1,7 @@
 <template>
   <div class="Steper-Box">
-    <div class="Btn-Prev">السابق</div>
-    <div class="Steps">{{stepNumber}}</div>
+    <div class="Btn-Prev" @click="PrevStep">السابق</div>
+    <div v-for="i in allSteps" class="Stage">{{i}}</div>
     <div class="Btn-Next" @click="NextStep">التالي</div>
   </div>
 </template>
@@ -11,15 +11,20 @@ export default {
   name: "Steper-Box",
   components: {},
   props: {
-    stepNumber: null
+    stepNumber: null,
   },
   data: function() {
-    return {};
+    return {
+    allSteps:4
+
+    };
   },
   methods: {
     NextStep: function() {
-      alert("Log Out");
-      this.$parent.stepNumber=2;
+      this.$parent.stepNumber+=1;
+    },
+    PrevStep: function() {
+      this.$parent.stepNumber-=1;
     }
   }
 };
@@ -31,7 +36,7 @@ export default {
   float: right;
   width: 500px;
   height: 60px;
-  background: orange;
+  abackground: orange;
   margin: 20px calc(50% - 250px);
   .Steps {
     float: right;
@@ -43,7 +48,14 @@ export default {
     float: right;
     width: 100px;
     height: 50px;
-    background: blue;
+    margin:5px 10px;
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+    border-radius: 5px;
   }
 }
 </style>
