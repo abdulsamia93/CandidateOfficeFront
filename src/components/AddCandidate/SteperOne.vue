@@ -6,21 +6,33 @@
         <div class="Btn-Search">بحث</div>
     </div>
 
+    <Input-Box FieldName="إسم المرشح" :VName="Fname"></Input-Box>
+    <Input-Box FieldName="إسم الأب" :VName="Fname"></Input-Box>
+    <Input-Box FieldName="إسم الجد" :VName="Fname"></Input-Box>
+    <Input-Box FieldName="اللقب" :VName="Fname"></Input-Box>
+    <Input-Box FieldName="إسم الأم" :VName="Fname"></Input-Box>
+    <Input-Box FieldName="تاريخ الميلاد" :VName="Fname"></Input-Box>
+    <Input-Box FieldName="الجنس" :VName="Fname"></Input-Box>
+    <Input-Box FieldName="رقم كتيب العائلة" :VName="Fname"></Input-Box>
+
 
   </div>
 </template>
 
 <script>
 import SteperBox from "@/components/AddCandidate/Steper.vue";
+import InputBox from "@/components/AddCandidate/InputBox.vue";
 
 export default {
   name: "Steper-One",
   components: {
-    SteperBox
+    SteperBox,
+    InputBox
   },
   props: {},
   data: function() {
     return {
+      Fname:"ahmed"
     };
   },
   methods: {

@@ -69,19 +69,19 @@ export default {
   }
   .Stage{
     float: right;
-    width: 50px;
-    height: 50px;
-    margin:5px 7.5px;
-    background: #aaa;
+    width: 30px;
+    height: 30px;
+    margin:15px 17.5px;
+    background: #ccc;
     border-radius: 50px;
   }
 
     .Stage-active{
     float: right;
-    width: 50px;
-    height: 50px;
-    margin:5px 7.5px;
-    background: #234;
+    width: 30px;
+    height: 30px;
+    margin:15px 17.5px;
+    background: #87c13f;
     border-radius: 50px;
   }
 
