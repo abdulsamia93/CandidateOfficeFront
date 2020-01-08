@@ -1,16 +1,12 @@
 <template>
-  <div class="Steper-One">
+  <div class="Steper-Two" style="">
 
-    <div class="Search-Box">
-        <input type="text" placeholder="الرقم الوطني">
-        <div class="Btn-Search">بحث</div>
-    </div>
 
-    <Input-Box FieldName="إسم المرشح" :VName="Nid.FName"></Input-Box>
-    <Input-Box FieldName="إسم الأب" :VName="Nid.SName"></Input-Box>
-    <Input-Box FieldName="إسم الجد" :VName="Nid.TName"></Input-Box>
-    <Input-Box FieldName="اللقب" :VName="Nid.LName"></Input-Box>
-    <Input-Box FieldName="إسم الأم" :VName="Nid.MName"></Input-Box>
+    <Select-Box FieldName="الدائرة الفرعية" :VList="Sub"></Select-Box>
+    <Input-Box FieldName="إسم الأب" :VName="Fname"></Input-Box>
+    <Input-Box FieldName="إسم الجد" :VName="Fname"></Input-Box>
+    <Input-Box FieldName="اللقب" :VName="Fname"></Input-Box>
+    <Input-Box FieldName="إسم الأم" :VName="Fname"></Input-Box>
     <Input-Box FieldName="تاريخ الميلاد" :VName="Fname"></Input-Box>
     <Input-Box FieldName="الجنس" :VName="Fname"></Input-Box>
     <Input-Box FieldName="رقم كتيب العائلة" :VName="Fname"></Input-Box>
@@ -22,24 +18,22 @@
 <script>
 import SteperBox from "@/components/AddCandidate/Steper.vue";
 import InputBox from "@/components/AddCandidate/InputBox.vue";
+import SelectBox from "@/components/AddCandidate/SelectBox.vue";
 
 export default {
-  name: "Steper-One",
+  name: "Steper-Two",
   components: {
     SteperBox,
-    InputBox
+    InputBox,
+    SelectBox
   },
   props: {},
   data: function() {
     return {
-      Nid:{
-              FName:"عبدالسلام",
-              SName:"محمود",
-              TName:"علي",
-              LName:"الليبي",
-              MName:"فاطمة",
-
-      }
+      Sub:[
+        {name:"طرابلس المركز",value:1},
+        {name:"حي الاندلس",value:2},
+      ],
     };
   },
   methods: {
@@ -49,17 +43,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.Steper-One{
+.Steper-Two{
   float: right;
   width: 100%;
-  height: 500px;
+  height: 450px;
+  margin-top: 50px;
   .Search-Box{
     float: right;
     width: 320px;
     padding:30px calc(50% - 155px);
     height: 50px;
     border-bottom:1px solid #efefef;
-
     input{
       float: right;
       width: 208px;

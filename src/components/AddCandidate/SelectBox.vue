@@ -1,19 +1,21 @@
 <template>
-  <div class="Input-Box">
+  <div class="Select-Box">
       <div class="Label">{{FieldName}}</div>
-      <input class="Input" v-model="VName">
+      <select class="Input" v-model="VName">
+        <option v-for="item in VList" :value="item.value">{{item.name}}</option>
+      </select>
   </div>
 </template>
 
 <script>
 
 export default {
-  name: "Input-Box",
+  name: "Select-Box",
   components: {
   },
   props: {
       FieldName:null,
-      VName:null,
+      VList:null,
   },
   data: function() {
     return {
@@ -26,7 +28,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.Input-Box{
+.Select-Box{
     float: right;
     width: calc(calc(100% / 3) - 30px);
     abackground: red; 
