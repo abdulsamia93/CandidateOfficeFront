@@ -28,25 +28,34 @@ export default {
     methods: {
     MakeLogin: function() {
 
-      axios.get("http://localhost/alendmag/admin/makelogin.php?username="+ 
-      this.username +
-      "&password="+
-      this.password
-      ).then(res => {
-        this.auth = res.data
-        if(this.auth[0]['isuser']=='1'){
-          alert(this.auth[0]['token'])
-          alert(this.auth[0]['id'])
-          localStorage.userkey = this.auth[0]['token'];
+      // axios.get("http://localhost/alendmag/admin/makelogin.php?username="+ 
+      // this.username +
+      // "&password="+
+      // this.password
+      // ).then(res => {
+      //   this.auth = res.data
+      //   if(this.auth[0]['isuser']=='1'){
+      //     alert(this.auth[0]['token'])
+      //     alert(this.auth[0]['id'])
+      //     localStorage.userkey = this.auth[0]['token'];
+      //     localStorage.login=true;
+      //     localStorage.userid=this.auth[0]['id'];
+      //     this.$parent.userkey=this.auth[0]['token'];
+      //     this.$parent.login=true;
+      //     this.$parent.userid=this.auth[0]['id'];
+      //   }else{
+      //     this.mess='wrong value'
+      //   }
+      // });
+
+
+          localStorage.userkey = "testKey";
           localStorage.login=true;
-          localStorage.userid=this.auth[0]['id'];
-          this.$parent.userkey=this.auth[0]['token'];
+          localStorage.userid=1;
+          this.$parent.userkey="testKey";
           this.$parent.login=true;
-          this.$parent.userid=this.auth[0]['id'];
-        }else{
-          this.mess='wrong value'
-        }
-      });
+          this.$parent.userid=1;
+
 
     }
     }
