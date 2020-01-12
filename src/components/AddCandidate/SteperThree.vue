@@ -9,6 +9,8 @@
     <Input-Upload-Box FieldName="شهادة البراءة" :VName="Fname"></Input-Upload-Box>
     <Input-Upload-Box FieldName="ورقة العائلة" :VName="Fname"></Input-Upload-Box>
 
+    <Input-Download-Upload-Box FieldName="ورقة العائلة" :VName="Fname"></Input-Download-Upload-Box>
+
 
   </div>
 </template>
@@ -18,6 +20,7 @@ import SteperBox from "@/components/AddCandidate/Steper.vue";
 import InputBox from "@/components/AddCandidate/InputBox.vue";
 import SelectBox from "@/components/AddCandidate/SelectBox.vue";
 import InputUploadBox from "@/components/AddCandidate/InputUploadBox.vue";
+import InputDownloadUploadBox from "@/components/AddCandidate/InputDownloadUploadBox.vue";
 
 export default {
   name: "Steper-Three",
@@ -25,7 +28,8 @@ export default {
     SteperBox,
     InputBox,
     SelectBox,
-    InputUploadBox
+    InputUploadBox,
+    InputDownloadUploadBox
   },
   props: {},
   data: function() {

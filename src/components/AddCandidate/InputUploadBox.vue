@@ -45,7 +45,7 @@ export default {
         font-size:17px;
         border:1px solid #eeeeee;
         border-radius: 5px;
-        color:#787878;
+        color:#fff;
         font-family: 'Cairo';
         background: linear-gradient(60deg, #ffa726, #fb8c00);
     }
