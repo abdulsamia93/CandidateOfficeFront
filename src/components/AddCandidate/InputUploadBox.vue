@@ -26,10 +26,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.Input-Box{
+.Input-Upload-Box{
     float: right;
     width: calc(calc(100% / 3) - 30px);
-    abackground: red; 
     margin:10px 15px; 
     .Label{
         float: right;
@@ -43,11 +42,12 @@ export default {
         padding:0px 5px;
         height: 40px;
         line-height: 40px;
-        font-size: 20px;
+        font-size:17px;
         border:1px solid #eeeeee;
         border-radius: 5px;
         color:#787878;
         font-family: 'Cairo';
+        background: linear-gradient(60deg, #ffa726, #fb8c00);
     }
 }
 </style>

@@ -10,7 +10,7 @@
     <div class="Form-Body">
       <Steper-One v-show="stepNumber==1"></Steper-One>
       <Steper-Two v-show="stepNumber==2"></Steper-Two>
-      <div class="Step-Three" v-show="stepNumber==3">ju</div>
+      <Steper-Three v-show="stepNumber==3">ju</Steper-Three>
       <div class="Step-Four" v-show="stepNumber==4">ju</div>
 
       <Steper-Box :stepNumber="stepNumber"></Steper-Box>
@@ -22,13 +22,15 @@
 import SteperBox from "@/components/AddCandidate/Steper.vue";
 import SteperOne from "@/components/AddCandidate/SteperOne.vue";
 import SteperTwo from "@/components/AddCandidate/SteperTwo.vue";
+import SteperThree from "@/components/AddCandidate/SteperThree.vue";
 
 export default {
   name: "List-View",
   components: {
     SteperBox,
     SteperOne,
-    SteperTwo
+    SteperTwo,
+    SteperThree
   },
   props: {},
   data: function() {
