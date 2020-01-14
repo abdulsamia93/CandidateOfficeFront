@@ -2,13 +2,11 @@
   <div class="List-View">
     <div class="List-Header">
       <div class="Info-Box">
-        <div class="List-Title">قائمة المرشحين الأفراد</div>
-        <div class="List-Des">قائمة المرشحين الأفراد المسجلين بهذا المكتب</div>
+        <div class="List-Title">مرشحين في انتضار التحقق</div>
+        <div class="List-Des">قائمة المرشحين الأفراد المسجلين عن طريق الإنترنت</div>
       </div>
 
       <div class="Btn-Box">
-        <a class="Btn" href="http://localhost:8080/addcandidate">أضف مرشح</a>
-        
       </div>
     </div>
 
@@ -43,7 +41,7 @@
         <div class="Cel">ماجستير</div>
 
         <div class="Cel">
-          <div class="Btn-Add-Candidate">المزكين</div>
+          <div class="Btn-Add-Candidate">تحقق</div>
         </div>
       </div>
 
@@ -60,7 +58,9 @@
 
         <div class="Cel">ماجستير</div>
 
-        <div class="Cel">رقم المرشح</div>
+        <div class="Cel">
+                    <div class="Btn-Add-Candidate">تحقق</div>
+        </div>
       </div>
 
       <div class="Row">
@@ -191,7 +191,6 @@ export default {
         text-align: center;
         line-height: 50px;
         background: hsla(0, 0%, 100%, 0.2) !important;
-        text-decoration: none;
       }
     }
   }

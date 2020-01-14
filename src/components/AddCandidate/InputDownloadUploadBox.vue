@@ -2,7 +2,7 @@
   <div class="Input-Download-Upload-Box">
     <div class="btn-download">تنزيل النموذج</div>
 
-    <div class="btn-Upload" onclick="document.getElementById('UploadFile').click()">رفع النموذج</div>
+    <div class="btn-Upload" @click="btnUpload('UploadFile')">رفع النموذج</div>
     <input type="file" id="UploadFile" class="Input" value="رفع النموذج" />
 
   </div>
@@ -19,7 +19,13 @@ export default {
   data: function() {
     return {};
   },
-  methods: {}
+  methods: {
+    btnUpload: function(InputId) {
+            var x=document.getElementById(InputId).click();
+            alert("sdfsd");
+            alert(document.getElementById(InputId).files.item(0).name);
+    }
+  }
 };
 </script>
 

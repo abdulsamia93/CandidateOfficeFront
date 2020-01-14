@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import candidate from "./views/Candidate.vue";
 import addcandidate from "./views/AddCandidate.vue";
+import approvecandidate from "./views/ApproveCandidate.vue";
 import entity from "./views/Entity.vue";
 
 
@@ -20,6 +21,11 @@ export default new Router({
       path: "/addcandidate",
       name: "cahdidate page",
       component: addcandidate
+    },
+    {
+      path: "/approvecandidate",
+      name: "cahdidate page",
+      component: approvecandidate
     },
     {
       path: "/entity",

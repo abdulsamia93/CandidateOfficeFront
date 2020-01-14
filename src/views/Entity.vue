@@ -29,7 +29,7 @@ export default {
         this.$parent.pages= [
         { type: 'page', name: "المرشحين", url: "/", active: "",},
         { type: 'page', name: "أضف مرشح", url: "/addcandidate", active: "",},
-        { type: 'page', name: "تأكيد مرشح", url: "/", active: "",},
+        { type: 'page', name: "تأكيد مرشح", url: "/approvecandidate", active: "",},
         { type: 'page', name: "الكيانات", url: "/entity", active: "active" },
         { type: 'page', name: "أضف كيان", url: "/entity", active: "" },
         { type: 'page', name: "تأكيد كيان", url: "/entity", active: "" },
