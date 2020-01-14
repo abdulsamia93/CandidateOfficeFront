@@ -2,121 +2,68 @@
   <div class="List-View">
     <div class="List-Header">
       <div class="Info-Box">
-        <div class="List-Title">قائمة المرشحين الأفراد</div>
-        <div class="List-Des">قائمة المرشحين الأفراد المسجلين بهذا المكتب</div>
+        <div class="List-Title">قائمة المزكين</div>
+        <div class="List-Des">قائمة المزكين للمرشح الفردي</div>
       </div>
 
       <div class="Btn-Box">
-        <router-link class="Btn" to="addcandidate">أضف مرشح</router-link>
       </div>
     </div>
 
+
+    <Candidate-Info/>
+
     <div class="List-Body">
       <div class="HRow">
-        <div class="Cel">رقم المرشح</div>
+        <div class="Cel">رقم المزكي</div>
 
-        <div class="Cel">إسم المرشح</div>
+        <div class="Cel">إسم المزكي</div>
 
-        <div class="Cel">رقم المرشح</div>
+        <div class="Cel">الرقم الوطني</div>
 
-        <div class="Cel">رقم المرشح</div>
-
-        <div class="Cel">رقم المرشح</div>
-
-        <div class="Cel">رقم المرشح</div>
-
-        <div class="Cel">رقم المرشح</div>
       </div>
 
       <div class="Row">
         <div class="Cel">1</div>
 
-        <div class="Cel">عبدالله إبراهيم خالد</div>
+        <div class="Cel">عبدالله إبراهيم</div>
 
-        <div class="Cel">دائرة الجبل الغربي</div>
-
-        <div class="Cel">حي الوحدة</div>
-
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">
-          <router-link class="Btn-Add-Candidate" to="/candidate/devoted">المزكين</router-link>
-        </div>
+        <div class="Cel">199999123113</div>
       </div>
 
       <div class="Row">
-        <div class="Cel">2</div>
+        <div class="Cel">1</div>
 
-        <div class="Cel">عبدالله إبراهيم خالد</div>
+        <div class="Cel">عبدالله إبراهيم</div>
 
-        <div class="Cel">دائرة الجبل الغربي</div>
-
-        <div class="Cel">حي الوحدة</div>
-
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">
-          <div class="Btn-Add-Candidate">المزكين</div>
-        </div>
+        <div class="Cel">199999123113</div>
       </div>
 
       <div class="Row">
-        <div class="Cel">3</div>
+        <div class="Cel">1</div>
 
-        <div class="Cel">عبدالله إبراهيم خالد</div>
+        <div class="Cel">عبدالله إبراهيم</div>
 
-        <div class="Cel">دائرة الجبل الغربي</div>
-
-        <div class="Cel">حي الوحدة</div>
-
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">
-          <div class="Btn-Add-Candidate">المزكين</div>
-        </div>
+        <div class="Cel">199999123113</div>
       </div>
 
       <div class="Row">
-        <div class="Cel">4</div>
+        <div class="Cel">1</div>
 
-        <div class="Cel">عبدالله إبراهيم خالد</div>
+        <div class="Cel">عبدالله إبراهيم</div>
 
-        <div class="Cel">دائرة الجبل الغربي</div>
-
-        <div class="Cel">حي الوحدة</div>
-
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">
-          <div class="Btn-Add-Candidate">المزكين</div>
-        </div>
+        <div class="Cel">199999123113</div>
       </div>
 
       <div class="Row">
-        <div class="Cel">5</div>
+        <div class="Cel">1</div>
 
-        <div class="Cel">عبدالله إبراهيم خالد</div>
+        <div class="Cel">عبدالله إبراهيم</div>
 
-        <div class="Cel">دائرة الجبل الغربي</div>
-
-        <div class="Cel">حي الوحدة</div>
-
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">
-          <div class="Btn-Add-Candidate">المزكين</div>
-        </div>
+        <div class="Cel">199999123113</div>
       </div>
+
+
     </div>
 
     <div class="Pages-Number">
@@ -129,9 +76,13 @@
 </template>
 
 <script>
+import CandidateInfo from "@/components/Devoted/CandidateInfo.vue";
+
 export default {
   name: "List-View",
-  components: {},
+  components: {
+    CandidateInfo
+  },
   props: {},
   data: function() {
     return {
@@ -220,7 +171,7 @@ export default {
         float: right;
         direction: rtl;
         height: 32px;
-        width: calc(100% / 7);
+        width: calc(100% / 3);
         color: #ff9800 !important;
       }
     }
@@ -236,7 +187,7 @@ export default {
         float: right;
         direction: rtl;
         height: 32px;
-        width: calc(100% / 7);
+        width: calc(100% / 3);
         color: #9a9a9a;
       }
     }
