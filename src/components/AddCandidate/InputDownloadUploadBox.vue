@@ -2,9 +2,8 @@
   <div class="Input-Download-Upload-Box">
     <div class="btn-download">تنزيل النموذج</div>
 
-    <div class="btn-Upload" @click="btnUpload('UploadFile')">رفع النموذج</div>
-    <input type="file" id="UploadFile" class="Input" value="رفع النموذج" />
-
+    <div class="Input-Upload" @click="btnUpload('UploadFile')"> رفع النموذج | {{fn}}</div>
+    <input type="file" :id="IdName"  @change="getNameFile('UploadFile')" />
   </div>
 </template>
 
@@ -14,19 +13,36 @@ export default {
   components: {},
   props: {
     FieldName: null,
-    VName: null
+    VName: null,
+    IdName: null
   },
   data: function() {
-    return {};
+    return {
+      fn: null
+    };
   },
   methods: {
     btnUpload: function(InputId) {
-            var x=document.getElementById(InputId).click();
-            alert("sdfsd");
-            alert(document.getElementById(InputId).files.item(0).name);
+      var x = document.getElementById(InputId).click();
+    },
+    getNameFile: function(InputId){
+      alert("sdf");
+      this.fn = document.getElementById(InputId).files.item(0).name;
     }
+  },
+  watch:{
+
+
+
+
+
+    
   }
 };
+
+
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -46,7 +62,7 @@ export default {
     color: #fff;
     margin: 0px 5px;
   }
-  .Input {
+  .Input-Upload {
     float: right;
     width: 200px;
     padding: 0px 5px;

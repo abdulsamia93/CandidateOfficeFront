@@ -9,7 +9,7 @@
     <Input-Upload-Box FieldName="شهادة البراءة" :VName="Fname"></Input-Upload-Box>
     <Input-Upload-Box FieldName="ورقة العائلة" :VName="Fname"></Input-Upload-Box>
 
-    <Input-Download-Upload-Box FieldName="ورقة العائلة" :VName="Fname"></Input-Download-Upload-Box>
+    <Input-Download-Upload-Box FieldName="ورقة العائلة" :VName="Fname" IdName="UploadFile"></Input-Download-Upload-Box>
 
 
   </div>
