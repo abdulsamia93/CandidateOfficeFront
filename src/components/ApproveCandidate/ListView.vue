@@ -190,7 +190,7 @@ export default {
         border-radius: 5px;
         text-align: center;
         line-height: 50px;
-        background: hsla(0, 0%, 100%, 0.2) !important;
+        background: hsla(0, 0%, 100%, 0.2);
       }
     }
   }
@@ -244,6 +244,11 @@ export default {
       font-size: 16px;
       line-height: 32px;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+                    cursor: pointer;
+
+      :hover{
+              background: #2f4050aa;
+      }
     }
   }
 

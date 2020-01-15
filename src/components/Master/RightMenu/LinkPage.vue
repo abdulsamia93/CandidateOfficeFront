@@ -43,6 +43,9 @@ export default {
     color:#a7b1c2;
     text-decoration: none;
   }
+  .link:hover{
+    background: #293846aa;
+  }
   .link-active{
     float: right;
     width: calc(100% - 8px);

@@ -2,14 +2,14 @@
   <div class="Steper-Three" style="">
 
 
-    <Input-Upload-Box FieldName="الرقم الوطني" :VName="Fname"></Input-Upload-Box>
-    <Input-Upload-Box FieldName="إيصال الدفع" :VName="Fname"></Input-Upload-Box>
-    <Input-Upload-Box FieldName="شهادة الميلاد" :VName="Fname"></Input-Upload-Box>
-    <Input-Upload-Box FieldName="الشهادة الصحية" :VName="Fname"></Input-Upload-Box>
-    <Input-Upload-Box FieldName="شهادة البراءة" :VName="Fname"></Input-Upload-Box>
-    <Input-Upload-Box FieldName="ورقة العائلة" :VName="Fname"></Input-Upload-Box>
+    <Input-Upload-Box FieldName="الرقم الوطني" :VName="Fname" IdName="one"></Input-Upload-Box>
+    <Input-Upload-Box FieldName="إيصال الدفع" :VName="Fname" IdName="two"></Input-Upload-Box>
+    <Input-Upload-Box FieldName="شهادة الميلاد" :VName="Fname" IdName="three"></Input-Upload-Box>
+    <Input-Upload-Box FieldName="الشهادة الصحية" :VName="Fname" IdName="four"></Input-Upload-Box>
+    <Input-Upload-Box FieldName="شهادة البراءة" :VName="Fname" IdName="five"></Input-Upload-Box>
+    <Input-Upload-Box FieldName="ورقة العائلة" :VName="Fname" IdName="six"></Input-Upload-Box>
 
-    <Input-Download-Upload-Box FieldName="ورقة العائلة" :VName="Fname" IdName="UploadFile"></Input-Download-Upload-Box>
+    <Input-Download-Upload-Box FieldName="ورقة العائلة" :VName="Fname" IdName="onee"></Input-Download-Upload-Box>
 
 
   </div>
@@ -38,6 +38,7 @@ export default {
         {name:"طرابلس المركز",value:1},
         {name:"حي الاندلس",value:2},
       ],
+      Fname:null,
     };
   },
   methods: {

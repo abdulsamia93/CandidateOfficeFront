@@ -1,11 +1,14 @@
 <template>
   <div class="Steper-Box">
-    <div class="Btn-Prev" @click="PrevStep">السابق</div>
+    <div class="Btn-Prev" @click="PrevStep" v-show="stepNumber>1">السابق</div>
+    <div class="Btn-Prev"  v-show="stepNumber==1"></div>
     <div v-for="i in allSteps" class="">
       <div v-show="i<=thestep" class="Stage-active"></div>
       <div v-show="i>thestep" class="Stage"></div>
     </div>
-    <div class="Btn-Next" @click="NextStep">التالي</div>
+    <div class="Btn-Next" @click="NextStep" v-show="stepNumber<4">التالي</div>
+        <router-link to="/" class="Btn-Next" v-show="stepNumber==4">إنهاء</router-link>
+
   </div>
 </template>
 
@@ -66,6 +69,13 @@ export default {
     font-size: 18px;
     box-shadow: 0 9px 18px rgba(0,0,0,0.2);
     border-radius: 5px;
+    text-decoration: none;
+  }
+  .Btn-Next:hover,.Btn-Prev:hover{
+    background: #87c13f;
+        background: linear-gradient(60deg, #ffa726aa, #fb8c00aa);
+        cursor: pointer;
+
   }
   .Stage{
     float: right;

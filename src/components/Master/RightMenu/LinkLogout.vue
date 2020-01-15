@@ -47,6 +47,9 @@ export default {
   background: #293846;
   border-radius: 4px;
   cursor:pointer;
+  :hover{
+    background: #5885afaa;
+  } 
   .btn-logout{
     float: right;
     width: 100%;

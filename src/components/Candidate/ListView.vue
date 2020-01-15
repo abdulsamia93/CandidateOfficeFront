@@ -60,7 +60,7 @@
         <div class="Cel">ماجستير</div>
 
         <div class="Cel">
-          <div class="Btn-Add-Candidate">المزكين</div>
+          <router-link class="Btn-Add-Candidate" to="/candidate/devoted">المزكين</router-link>
         </div>
       </div>
 
@@ -78,7 +78,7 @@
         <div class="Cel">ماجستير</div>
 
         <div class="Cel">
-          <div class="Btn-Add-Candidate">المزكين</div>
+          <router-link class="Btn-Add-Candidate" to="/candidate/devoted">المزكين</router-link>
         </div>
       </div>
 
@@ -96,7 +96,7 @@
         <div class="Cel">ماجستير</div>
 
         <div class="Cel">
-          <div class="Btn-Add-Candidate">المزكين</div>
+          <router-link class="Btn-Add-Candidate" to="/candidate/devoted">المزكين</router-link>
         </div>
       </div>
 
@@ -114,7 +114,7 @@
         <div class="Cel">ماجستير</div>
 
         <div class="Cel">
-          <div class="Btn-Add-Candidate">المزكين</div>
+          <router-link class="Btn-Add-Candidate" to="/candidate/devoted">المزكين</router-link>
         </div>
       </div>
     </div>
@@ -197,9 +197,12 @@ export default {
         border-radius: 5px;
         text-align: center;
         line-height: 50px;
-        background: hsla(0, 0%, 100%, 0.2) !important;
+        background: hsla(0, 0%, 100%, 0.2);
         text-decoration: none;
       }
+      .Btn:hover{
+          background: hsla(0, 0%, 100%, 0.4);
+        }
     }
   }
 

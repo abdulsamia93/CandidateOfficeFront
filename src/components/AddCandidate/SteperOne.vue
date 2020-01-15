@@ -1,9 +1,8 @@
 <template>
   <div class="Steper-One">
-
     <div class="Search-Box">
-        <input type="text" placeholder="الرقم الوطني">
-        <div class="Btn-Search">بحث</div>
+      <input type="text" placeholder="الرقم الوطني" />
+      <div class="Btn-Search">بحث</div>
     </div>
 
     <Input-Box FieldName="إسم المرشح" :VName="Nid.FName"></Input-Box>
@@ -14,8 +13,6 @@
     <Input-Box FieldName="تاريخ الميلاد" :VName="Fname"></Input-Box>
     <Input-Box FieldName="الجنس" :VName="Fname"></Input-Box>
     <Input-Box FieldName="رقم كتيب العائلة" :VName="Fname"></Input-Box>
-
-
   </div>
 </template>
 
@@ -32,63 +29,64 @@ export default {
   props: {},
   data: function() {
     return {
-      Nid:{
-              FName:"عبدالسلام",
-              SName:"محمود",
-              TName:"علي",
-              LName:"الليبي",
-              MName:"فاطمة",
-
+      Nid: {
+        FName: "عبدالسلام",
+        SName: "محمود",
+        TName: "علي",
+        LName: "الليبي",
+        MName: "فاطمة"
       }
     };
   },
-  methods: {
-  }
+  methods: {}
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.Steper-One{
+.Steper-One {
   float: right;
   width: 100%;
   height: 500px;
-  .Search-Box{
+  .Search-Box {
     float: right;
     width: 320px;
-    padding:30px calc(50% - 155px);
+    padding: 30px calc(50% - 155px);
     height: 50px;
-    border-bottom:1px solid #efefef;
+    border-bottom: 1px solid #efefef;
 
-    input{
+    input {
       float: right;
       width: 208px;
-      border:none;
+      border: none;
       height: 42px;
       line-height: 42px;
-      border:1px solid #efefef;
+      border: 1px solid #efefef;
       border-radius: 4px;
-      padding:3px 5px;
-      margin:0px 10px;
+      padding: 3px 5px;
+      margin: 0px 10px;
       font-size: 20px;
       outline: none;
-      font-family: 'Cairo';
+      font-family: "Cairo";
     }
-    .Btn-Search{
+    .Btn-Search {
       float: right;
       width: 80px;
       height: 50px;
-      margin:0px 0px;
+      margin: 0px 0px;
       background: linear-gradient(60deg, #ffa726, #fb8c00);
-      border:none;
+      border: none;
       text-align: center;
-      color:#fff;
+      color: #fff;
       border-radius: 4px;
       font-size: 22px;
       line-height: 50px;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+      cursor: pointer;
     }
-
+    .Btn-Search:hover {
+      background: linear-gradient(60deg, #ffa726aa, #fb8c00aa);
+    }
   }
 }
 </style>
