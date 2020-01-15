@@ -1,7 +1,7 @@
 <template>
   <div class="Input-Upload-Box">
     <div class="Btn-File" @click="btnUpload()">{{FieldName}} | {{fn}}</div>
-    <input type="file" :id="IdName" @change="getNameFile()" style="display:none;"/>
+    <input type="file" :id="IdName" @change="getNameFile()" style="display:none;" />
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
   },
   data: function() {
     return {
-      fn: null,
+      fn: null
     };
   },
   methods: {
@@ -39,9 +39,7 @@ export default {
   .Btn-File {
     float: right;
     line-height: 42px;
-    padding:0px 10px;
-
-
+    padding: 0px 10px;
     height: 50px;
     margin: 5px 10px;
     background: linear-gradient(60deg, #ffa726, #fb8c00);
@@ -52,11 +50,10 @@ export default {
     -webkit-box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
     box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-
-
-
+    cursor: pointer;
   }
-
-
+  .Btn-File:hover{
+    background: linear-gradient(60deg, #ffa726aa, #fb8c00aa);
+  }
 }
 </style>

@@ -6,8 +6,7 @@
         <div class="List-Des">قائمة المرشحين الأفراد المسجلين عن طريق الإنترنت</div>
       </div>
 
-      <div class="Btn-Box">
-      </div>
+      <div class="Btn-Box"></div>
     </div>
 
     <div class="List-Body">
@@ -59,7 +58,7 @@
         <div class="Cel">ماجستير</div>
 
         <div class="Cel">
-                    <div class="Btn-Add-Candidate">تحقق</div>
+          <div class="Btn-Add-Candidate">تحقق</div>
         </div>
       </div>
 
@@ -244,10 +243,10 @@ export default {
       font-size: 16px;
       line-height: 32px;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
-                    cursor: pointer;
+      cursor: pointer;
 
-      :hover{
-              background: #2f4050aa;
+      :hover {
+        background: #2f4050aa;
       }
     }
   }

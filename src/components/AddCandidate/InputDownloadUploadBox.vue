@@ -69,6 +69,9 @@ export default {
 
 
   }
+    .btn-download:hover{
+    background: linear-gradient(60deg, #ffa726aa, #fb8c00aa);
+  }
   .Input-Upload {
     float: right;
     line-height: 42px;
@@ -84,8 +87,9 @@ export default {
     -webkit-box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
     box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-
-
+  }
+    .Input-Upload:hover{
+    background: linear-gradient(60deg, #ffa726aa, #fb8c00aa);
   }
 }
 </style>
