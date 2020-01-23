@@ -21,7 +21,7 @@ export default {
   data: function() {
     return {
       messages:null,
-      links: [{ name: "مكتب طرابلس", url: "/" }, { name: "المرشحين", url: "/" }]
+      links: [{ name: "مكتب طرابلس", url: "/" }, { name: "المرشحين", url: "/" }, { name: "تأكيد مرشح", url: "/approvecandidate" }]
     };
   },
   created() {
@@ -30,7 +30,7 @@ export default {
         { type: 'page', name: "أضف مرشح", url: "/addcandidate", active: "",},
         { type: 'page', name: "تأكيد مرشح", url: "/approvecandidate", active: "active",},
         { type: 'page', name: "الكيانات", url: "/entity", active: "" },
-        { type: 'page', name: "أضف كيان", url: "/entity", active: "" },
+        { type: 'page', name: "أضف كيان", url: "/addentity", active: "" },
         { type: 'page', name: "تأكيد كيان", url: "/entity", active: "" },
       ]
 

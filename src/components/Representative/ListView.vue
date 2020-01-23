@@ -2,108 +2,69 @@
   <div class="List-View">
     <div class="List-Header">
       <div class="Info-Box">
-        <div class="List-Title">قائمة الكيانات</div>
-        <div class="List-Des">قائمة الكيانات المسجلين بهذا المكتب</div>
+        <div class="List-Title">قائمة الممثلين</div>
+        <div class="List-Des">قائمة الممثلين للكيان السياسي</div>
       </div>
 
       <div class="Btn-Box">
-        <router-link class="Btn" to="addentity">أضف كيان</router-link>
+                <router-link class="Btn" to="addcandidate">أضف ممثل</router-link>
       </div>
     </div>
 
+
+    <Entity-Info/>
+
     <div class="List-Body">
       <div class="HRow">
-        <div class="Cel">رقم الكيان</div>
+        <div class="Cel">رقم الممثل</div>
 
-        <div class="Cel">إسم الكيان</div>
+        <div class="Cel">إسم الممثل</div>
 
-        <div class="Cel">رقم الكيان</div>
+        <div class="Cel">الرقم الوطني</div>
 
-        <div class="Cel">رئيس الكيان</div>
-
-        <div class="Cel">رقم الكيان</div>
       </div>
 
       <div class="Row">
         <div class="Cel">1</div>
 
-        <div class="Cel">عبدالله إبراهيم خالد</div>
+        <div class="Cel">عبدالله إبراهيم</div>
 
-        <div class="Cel">دائرة الجبل الغربي</div>
-
-        <div class="Cel">عبدالله علي</div>
-
-        <div class="Cel2">
-          <router-link to="/entity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
-          <div class="Btn-Add-Candidate">الدوائر</div>
-          <div class="Btn-Add-Candidate">المرشحين</div>
-          <div class="Btn-Add-Candidate">المزكين</div>
-        </div>
+        <div class="Cel">199999123113</div>
       </div>
 
       <div class="Row">
-        <div class="Cel">2</div>
+        <div class="Cel">1</div>
 
-        <div class="Cel">عبدالله إبراهيم خالد</div>
+        <div class="Cel">عبدالله إبراهيم</div>
 
-        <div class="Cel">دائرة الجبل الغربي</div>
-
-        <div class="Cel">حي الوحدة</div>
-
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">رقم المرشح</div>
+        <div class="Cel">199999123113</div>
       </div>
 
       <div class="Row">
-        <div class="Cel">3</div>
+        <div class="Cel">1</div>
 
-        <div class="Cel">عبدالله إبراهيم خالد</div>
+        <div class="Cel">عبدالله إبراهيم</div>
 
-        <div class="Cel">دائرة الجبل الغربي</div>
-
-        <div class="Cel">حي الوحدة</div>
-
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">رقم المرشح</div>
+        <div class="Cel">199999123113</div>
       </div>
 
       <div class="Row">
-        <div class="Cel">4</div>
+        <div class="Cel">1</div>
 
-        <div class="Cel">عبدالله إبراهيم خالد</div>
+        <div class="Cel">عبدالله إبراهيم</div>
 
-        <div class="Cel">دائرة الجبل الغربي</div>
-
-        <div class="Cel">حي الوحدة</div>
-
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">رقم المرشح</div>
+        <div class="Cel">199999123113</div>
       </div>
 
       <div class="Row">
-        <div class="Cel">5</div>
+        <div class="Cel">1</div>
 
-        <div class="Cel">عبدالله إبراهيم خالد</div>
+        <div class="Cel">عبدالله إبراهيم</div>
 
-        <div class="Cel">دائرة الجبل الغربي</div>
-
-        <div class="Cel">حي الوحدة</div>
-
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">رقم المرشح</div>
+        <div class="Cel">199999123113</div>
       </div>
+
+
     </div>
 
     <div class="Pages-Number">
@@ -116,9 +77,13 @@
 </template>
 
 <script>
+import EntityInfo from "@/components/Representative/EntityInfo.vue";
+
 export default {
   name: "List-View",
-  components: {},
+  components: {
+    EntityInfo
+  },
   props: {},
   data: function() {
     return {
@@ -184,12 +149,11 @@ export default {
         border-radius: 5px;
         text-align: center;
         line-height: 50px;
-        background: hsla(0, 0%, 100%, 0.2);
+        background: hsla(0, 0%, 100%, 0.2) !important;
         text-decoration: none;
+      
       }
-      .Btn:hover {
-        background: hsla(0, 0%, 100%, 0.4);
-      }
+      
     }
   }
 
@@ -210,14 +174,7 @@ export default {
         float: right;
         direction: rtl;
         height: 32px;
-        width: calc(100% / 7);
-        color: #ff9800 !important;
-      }
-      .Cel2 {
-        float: right;
-        direction: rtl;
-        height: 32px;
-        width: calc(calc(100% / 7) * 3);
+        width: calc(100% / 3);
         color: #ff9800 !important;
       }
     }
@@ -233,37 +190,27 @@ export default {
         float: right;
         direction: rtl;
         height: 32px;
-        width: calc(100% / 7);
+        width: calc(100% / 3);
         color: #9a9a9a;
-      }
-      .Cel2 {
-        float: right;
-        direction: rtl;
-        height: 32px;
-        width: calc(calc(100% / 7) * 3);
-        color: #ff9800 !important;
-        .Btn-Add-Candidate {
-          float: right;
-          padding: 0px 15px;
-          background: #2f4050;
-          color: #fff;
-          text-align: center;
-          border-radius: 3px;
-          height: 32px;
-          font-size: 16px;
-          line-height: 32px;
-          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12),
-            0 1px 4px rgba(0, 0, 0, 0.24);
-          width: 80px;
-          margin: 0px 10px;
-          text-decoration: none;
-        }
-        .Btn-Add-Candidate:hover{
-                background: #2f4050aa;
-        }
       }
     }
 
+    .Btn-Add-Candidate {
+      float: right;
+      padding: 0px 15px;
+      background: #2f4050;
+      color: #fff;
+      text-align: center;
+      border-radius: 3px;
+      height: 32px;
+      font-size: 16px;
+      line-height: 32px;
+      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+      text-decoration: none;
+    }
+        .Btn-Add-Candidate:hover {
+                background: #2f4050aa;
+        }
 
   }
 

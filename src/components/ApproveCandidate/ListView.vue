@@ -40,7 +40,7 @@
         <div class="Cel">ماجستير</div>
 
         <div class="Cel">
-          <div class="Btn-Add-Candidate">تحقق</div>
+                <router-link to="approvecandidate/approve" class="Btn-Add-Candidate">تحقق</router-link>
         </div>
       </div>
 
@@ -191,6 +191,7 @@ export default {
         line-height: 50px;
         background: hsla(0, 0%, 100%, 0.2);
       }
+      
     }
   }
 
@@ -243,12 +244,12 @@ export default {
       font-size: 16px;
       line-height: 32px;
       box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+      text-decoration: none;
       cursor: pointer;
-
-      :hover {
+    }
+    .Btn-Add-Candidate:hover {
         background: #2f4050aa;
       }
-    }
   }
 
   .Pages-Number {
