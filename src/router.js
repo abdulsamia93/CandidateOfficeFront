@@ -15,6 +15,9 @@ import EntityAddCandidate from "./views/EntityAddCandidate.vue";
 import EntityDevoted from "./views/EntityDevoted.vue";
 import EntityAddDevoted from "./views/EntityAddDevoted.vue";
 import addentity from "./views/AddEntity.vue";
+import ApproveEntity from "./views/ApproveEntity/ApproveEntity.vue";
+import ApproveEntitySubconstituency from "./views/ApproveEntity/SubConstituency/Subconstituency.vue";
+import ApproveEntitySubconstituencyAdd from "./views/ApproveEntity/SubConstituency/Add/AddSubconstituency.vue";
 
 
 Vue.use(Router);
@@ -97,6 +100,21 @@ export default new Router({
       path: "/addentity",
       name: "subscription Page",
       component: addentity
+    },
+    {
+      path: "/ApproveEntity",
+      name: "subscription Page",
+      component: ApproveEntity
+    },
+    {
+      path: "/ApproveEntity/Subconstituency",
+      name: "subscription Page",
+      component: ApproveEntitySubconstituency
+    },
+    {
+      path: "/ApproveEntity/Subconstituency/Add",
+      name: "subscription Page",
+      component: ApproveEntitySubconstituencyAdd
     },
   ]
 });

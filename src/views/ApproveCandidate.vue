@@ -31,7 +31,7 @@ export default {
         { type: 'page', name: "تأكيد مرشح", url: "/approvecandidate", active: "active",},
         { type: 'page', name: "الكيانات", url: "/entity", active: "" },
         { type: 'page', name: "أضف كيان", url: "/addentity", active: "" },
-        { type: 'page', name: "تأكيد كيان", url: "/entity", active: "" },
+        { type: 'page', name: "تأكيد كيان", url: "/ApproveEntity", active: "" },
       ]
 
 
