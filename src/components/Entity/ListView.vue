@@ -34,76 +34,82 @@
         <div class="Cel">عبدالله علي</div>
 
         <div class="Cel2">
+          <router-link to="/entity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
           <router-link to="/entity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
-          <div class="Btn-Add-Candidate">الدوائر</div>
-          <div class="Btn-Add-Candidate">المرشحين</div>
-          <div class="Btn-Add-Candidate">المزكين</div>
+          <router-link to="/entity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
+          <router-link to="/entity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
         </div>
       </div>
 
       <div class="Row">
-        <div class="Cel">2</div>
+        <div class="Cel">1</div>
 
         <div class="Cel">عبدالله إبراهيم خالد</div>
 
         <div class="Cel">دائرة الجبل الغربي</div>
 
-        <div class="Cel">حي الوحدة</div>
+        <div class="Cel">عبدالله علي</div>
 
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">رقم المرشح</div>
+        <div class="Cel2">
+          <router-link to="/entity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
+          <router-link to="/entity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
+          <router-link to="/entity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
+          <router-link to="/entity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
+        </div>
       </div>
 
       <div class="Row">
-        <div class="Cel">3</div>
+        <div class="Cel">1</div>
 
         <div class="Cel">عبدالله إبراهيم خالد</div>
 
         <div class="Cel">دائرة الجبل الغربي</div>
 
-        <div class="Cel">حي الوحدة</div>
+        <div class="Cel">عبدالله علي</div>
 
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">رقم المرشح</div>
+        <div class="Cel2">
+          <router-link to="/entity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
+          <router-link to="/entity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
+          <router-link to="/entity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
+          <router-link to="/entity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
+        </div>
       </div>
 
       <div class="Row">
-        <div class="Cel">4</div>
+        <div class="Cel">1</div>
 
         <div class="Cel">عبدالله إبراهيم خالد</div>
 
         <div class="Cel">دائرة الجبل الغربي</div>
 
-        <div class="Cel">حي الوحدة</div>
+        <div class="Cel">عبدالله علي</div>
 
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">رقم المرشح</div>
+        <div class="Cel2">
+          <router-link to="/entity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
+          <router-link to="/entity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
+          <router-link to="/entity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
+          <router-link to="/entity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
+        </div>
       </div>
 
       <div class="Row">
-        <div class="Cel">5</div>
+        <div class="Cel">1</div>
 
         <div class="Cel">عبدالله إبراهيم خالد</div>
 
         <div class="Cel">دائرة الجبل الغربي</div>
 
-        <div class="Cel">حي الوحدة</div>
+        <div class="Cel">عبدالله علي</div>
 
-        <div class="Cel">1968</div>
-
-        <div class="Cel">ماجستير</div>
-
-        <div class="Cel">رقم المرشح</div>
+        <div class="Cel2">
+          <router-link to="/entity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
+          <router-link to="/entity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
+          <router-link to="/entity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
+          <router-link to="/entity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
+        </div>
       </div>
+
+      
     </div>
 
     <div class="Pages-Number">

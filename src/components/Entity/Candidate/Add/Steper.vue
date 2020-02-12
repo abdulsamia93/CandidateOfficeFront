@@ -7,7 +7,7 @@
       <div v-show="i>thestep" class="Stage"></div>
     </div>
     <div class="Btn-Next" @click="NextStep" v-show="stepNumber<4">التالي</div>
-    <router-link to="/" class="Btn-Next" v-show="stepNumber==4">إنهاء</router-link>
+    <router-link to="/entity/candidate" class="Btn-Next" v-show="stepNumber==4">إنهاء</router-link>
   </div>
 </template>
 

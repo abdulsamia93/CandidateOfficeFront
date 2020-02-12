@@ -2,12 +2,12 @@
   <div class="List-View">
     <div class="List-Header">
       <div class="Info-Box">
-        <div class="List-Title">قائمة الممثلين</div>
-        <div class="List-Des">قائمة الممثلين للكيان السياسي</div>
+        <div class="List-Title">قائمة المزكين</div>
+        <div class="List-Des">قائمة المزكين للكيان السياسي</div>
       </div>
 
       <div class="Btn-Box">
-                <router-link class="Btn" to="addcandidate">أضف ممثل</router-link>
+                <router-link class="Btn" to="addcandidate">أضف مزكي</router-link>
       </div>
     </div>
 
@@ -16,53 +16,65 @@
 
     <div class="List-Body">
       <div class="HRow">
-        <div class="Cel">رقم الممثل</div>
+        <div class="Cel">رقم المزكي</div>
 
-        <div class="Cel">إسم الممثل</div>
+        <div class="Cel">إسم المزكي</div>
 
         <div class="Cel">الرقم الوطني</div>
 
+
       </div>
+
+
 
       <div class="Row">
         <div class="Cel">1</div>
-
-        <div class="Cel">عبدالله إبراهيم</div>
-
-        <div class="Cel">199999123113</div>
+        <div class="Cel">احمد علي خالد</div>
+        <div class="Cel">199341231413</div>
       </div>
+
+
 
       <div class="Row">
-        <div class="Cel">1</div>
-
-        <div class="Cel">عبدالله إبراهيم</div>
-
-        <div class="Cel">199999123113</div>
+        <div class="Cel">2</div>
+        <div class="Cel">احمد علي خالد</div>
+        <div class="Cel">199341231413</div>
       </div>
 
+
+      
       <div class="Row">
-        <div class="Cel">1</div>
-
-        <div class="Cel">عبدالله إبراهيم</div>
-
-        <div class="Cel">199999123113</div>
+        <div class="Cel">3</div>
+        <div class="Cel">احمد علي خالد</div>
+        <div class="Cel">199341231413</div>
       </div>
 
+
+
+      
       <div class="Row">
-        <div class="Cel">1</div>
-
-        <div class="Cel">عبدالله إبراهيم</div>
-
-        <div class="Cel">199999123113</div>
+        <div class="Cel">4</div>
+        <div class="Cel">احمد علي خالد</div>
+        <div class="Cel">199341231413</div>
       </div>
 
+
+
+      
       <div class="Row">
-        <div class="Cel">1</div>
-
-        <div class="Cel">عبدالله إبراهيم</div>
-
-        <div class="Cel">199999123113</div>
+        <div class="Cel">5</div>
+        <div class="Cel">احمد علي خالد</div>
+        <div class="Cel">199341231413</div>
       </div>
+
+
+      
+      <div class="Row">
+        <div class="Cel">6</div>
+        <div class="Cel">احمد علي خالد</div>
+        <div class="Cel">199341231413</div>
+      </div>
+
 
 
     </div>
@@ -74,10 +86,11 @@
       <div class="Page-Number">4</div>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
-import EntityInfo from "@/components/Representative/EntityInfo.vue";
+import EntityInfo from "@/components/Entity/Devoted/EntityInfo.vue";
 
 export default {
   name: "List-View",
