@@ -7,7 +7,7 @@
       </div>
 
       <div class="Btn-Box">
-                <router-link class="Btn" to="addcandidate">أضف مزكي</router-link>
+                <router-link class="Btn" to="devoted/add">أضف مزكي</router-link>
       </div>
     </div>
 

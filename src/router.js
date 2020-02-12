@@ -13,6 +13,7 @@ import addsubconstituency from "./views/AddSubconstituency.vue";
 import EntityCandidate from "./views/EntityCandidate.vue";
 import EntityAddCandidate from "./views/EntityAddCandidate.vue";
 import EntityDevoted from "./views/EntityDevoted.vue";
+import EntityAddDevoted from "./views/EntityAddDevoted.vue";
 import addentity from "./views/AddEntity.vue";
 
 
@@ -86,6 +87,11 @@ export default new Router({
       path: "/entity/devoted",
       name: "subscription Page",
       component: EntityDevoted
+    },
+    {
+      path: "/entity/devoted/add",
+      name: "subscription Page",
+      component: EntityAddDevoted
     },
     {
       path: "/addentity",
