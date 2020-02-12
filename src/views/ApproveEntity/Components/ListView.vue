@@ -47,10 +47,10 @@
         <div class="Cel">عبدالله علي</div>
 
         <div class="Cel2">
-          <router-link to="/entity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
-          <router-link to="/entity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
-          <router-link to="/entity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
-          <router-link to="/entity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
+          <router-link to="/ApproveEntity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
+          <router-link to="/ApproveEntity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
+          <router-link to="/ApproveEntity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
+          <router-link to="/ApproveEntity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
         </div>
       </div>
 
@@ -64,10 +64,10 @@
         <div class="Cel">عبدالله علي</div>
 
         <div class="Cel2">
-          <router-link to="/entity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
-          <router-link to="/entity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
-          <router-link to="/entity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
-          <router-link to="/entity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
+          <router-link to="/ApproveEntity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
+          <router-link to="/ApproveEntity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
+          <router-link to="/ApproveEntity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
+          <router-link to="/ApproveEntity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
         </div>
       </div>
 
@@ -81,10 +81,10 @@
         <div class="Cel">عبدالله علي</div>
 
         <div class="Cel2">
-          <router-link to="/entity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
-          <router-link to="/entity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
-          <router-link to="/entity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
-          <router-link to="/entity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
+          <router-link to="/ApproveEntity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
+          <router-link to="/ApproveEntity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
+          <router-link to="/ApproveEntity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
+          <router-link to="/ApproveEntity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
         </div>
       </div>
 
@@ -98,10 +98,10 @@
         <div class="Cel">عبدالله علي</div>
 
         <div class="Cel2">
-          <router-link to="/entity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
-          <router-link to="/entity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
-          <router-link to="/entity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
-          <router-link to="/entity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
+          <router-link to="/ApproveEntity/subconstituency" class="Btn-Add-Candidate">الدوائر</router-link>
+          <router-link to="/ApproveEntity/representative" class="Btn-Add-Candidate">الممثلين</router-link>
+          <router-link to="/ApproveEntity/candidate" class="Btn-Add-Candidate">المرشحين</router-link>
+          <router-link to="/ApproveEntity/devoted" class="Btn-Add-Candidate">المزكين</router-link>
         </div>
       </div>
     </div>
