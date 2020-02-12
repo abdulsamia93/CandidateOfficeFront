@@ -18,6 +18,15 @@ import addentity from "./views/AddEntity.vue";
 import ApproveEntity from "./views/ApproveEntity/ApproveEntity.vue";
 import ApproveEntitySubconstituency from "./views/ApproveEntity/SubConstituency/Subconstituency.vue";
 import ApproveEntitySubconstituencyAdd from "./views/ApproveEntity/SubConstituency/Add/AddSubconstituency.vue";
+import ApproveEntityRepresentative from "./views/ApproveEntity/Representative/Representative.vue";
+import ApproveEntityRepresentativeAdd from "./views/ApproveEntity/Representative/Add/AddRepresentative.vue";
+import ApproveEntityDevoted from "./views/ApproveEntity/Devoted/Devoted.vue";
+import ApproveEntityDevotedAdd from "./views/ApproveEntity/Devoted/Add/AddDevoted.vue";
+import ApproveEntityCandidate from "./views/ApproveEntity/Candidate/Candidate.vue";
+import ApproveEntityCandidateAdd from "./views/ApproveEntity/Candidate/Add/AddCandidate.vue";
+
+
+
 
 
 Vue.use(Router);
@@ -115,6 +124,36 @@ export default new Router({
       path: "/ApproveEntity/Subconstituency/Add",
       name: "subscription Page",
       component: ApproveEntitySubconstituencyAdd
+    },
+    {
+      path: "/ApproveEntity/Representative",
+      name: "subscription Page",
+      component: ApproveEntityRepresentative
+    },
+    {
+      path: "/ApproveEntity/Representative/Add",
+      name: "subscription Page",
+      component: ApproveEntityRepresentativeAdd
+    },
+    {
+      path: "/ApproveEntity/Devoted",
+      name: "subscription Page",
+      component: ApproveEntityDevoted
+    },
+    {
+      path: "/ApproveEntity/Devoted/Add",
+      name: "subscription Page",
+      component: ApproveEntityDevotedAdd
+    },
+    {
+      path: "/ApproveEntity/Candidate",
+      name: "subscription Page",
+      component: ApproveEntityCandidate
+    },
+    {
+      path: "/ApproveEntity/Candidate/Add",
+      name: "subscription Page",
+      component: ApproveEntityCandidateAdd
     },
   ]
 });

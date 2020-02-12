@@ -9,7 +9,7 @@
 import Vue from "vue";
 import axios from "axios";
 import VueAxios from "vue-axios";
-import ListView from "@/components/Entity/Subconstituency/Add/ListView.vue";
+import ListView from "@/components/Entity/Devoted/ListView.vue";
 import PagesThree from "@/components/Genral/PagesThree.vue";
 Vue.use(VueAxios, axios);
 export default {
@@ -21,7 +21,7 @@ export default {
   data: function() {
     return {
       messages:null,
-      links: [{ name: "مكتب طرابلس", url: "/" }, { name: "تأكيد كيان", url: "/ApproveEntity" }, { name: "الدوائر", url: "/ApproveEntity/Subconstituency" }]
+      links: [{ name: "مكتب طرابلس", url: "/" }, { name: "تأكيد كيان", url: "/ApproveEntity" }, { name: "المزكين", url: "/ApproveEntity/Devoted" }]
     };
   },
   created() {
